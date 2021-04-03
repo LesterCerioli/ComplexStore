@@ -1,4 +1,7 @@
-﻿INSERT INTO [Core_StateOrProvince] ([CountryId], [Code], [Name]) VALUES
+﻿//languages
+
+
+INSERT INTO [Core_StateOrProvince] ([CountryId], [Code], [Name]) VALUES
 ('US', 'AL', 'Alabama'),
 ('US', 'AK', 'Alaska'),
 ('US', 'AS', 'American Samoa'),

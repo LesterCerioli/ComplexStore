@@ -1,4 +1,6 @@
-﻿DELETE FROM Core_StateOrProvince WHERE Id != 1
+﻿//languages
+
+DELETE FROM Core_StateOrProvince WHERE Id != 1
 GO
 
 SET IDENTITY_INSERT Core_StateOrProvince ON 

@@ -1,3 +1,4 @@
+//languages
 INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('pt-BR', N'Portuguese')
 GO
 

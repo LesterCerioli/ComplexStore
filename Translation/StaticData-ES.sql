@@ -1,4 +1,6 @@
-﻿INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('es-ES', N'Spanish')
+﻿//languages
+
+INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('es-ES', N'Spanish')
 GO
 
 INSERT [dbo].[Localization_Resource] ([CultureId], [Key], [Value]) VALUES ('es-ES', N'Register', N'Registrar,')

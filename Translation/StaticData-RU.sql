@@ -1,4 +1,6 @@
-﻿INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('ru-RU', N'Russian')
+﻿//languages
+
+INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('ru-RU', N'Russian')
 GO
 IF NOT EXISTS (SELECT * FROM dbo.Localization_Resource AS v WHERE v.[Key]=N'A value for the {0} property was not provided.' AND v.CultureId=N'ru-Ru')
 INSERT [dbo].[Localization_Resource] ([CultureId], [Key], [Value]) VALUES ('ru-Ru', N'A value for the {0} property was not provided.', N'Значение для свойства {0} не было предоставлено.')

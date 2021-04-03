@@ -1,4 +1,6 @@
-﻿INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('fa-IR', N'فارسی')
+﻿//languages
+
+INSERT [dbo].[Localization_Culture] ([Id], [Name]) VALUES ('fa-IR', N'فارسی')
 GO
 
 INSERT [dbo].[Localization_Resource] ([CultureId], [Key], [Value]) VALUES ('fa-IR', N'Register', N'ثبت‌نام')

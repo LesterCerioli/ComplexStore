@@ -6,7 +6,7 @@
     <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Content Include="wwwroot\**\*;modules.json;appsettings.json;Modules\**\*;Themes\**\*;Views\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

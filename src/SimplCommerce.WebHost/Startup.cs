@@ -40,13 +40,13 @@ namespace SimplCommerce.WebHost
         {
             GlobalConfiguration.WebRootPath = _hostingEnvironment.WebRootPath;
             GlobalConfiguration.ContentRootPath = _hostingEnvironment.ContentRootPath;
-            services.AddModules(_hostingEnvironment.ContentRootPath);
+            services.AddModules();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
             });
             services.AddCustomizedDataStore(_configuration);
             services.AddCustomizedIdentity(_configuration);
@@ -90,7 +90,7 @@ namespace SimplCommerce.WebHost
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -100,14 +100,14 @@ namespace SimplCommerce.WebHost
             else
             {
                 app.UseWhen(
-                    context => !context.Request.Path.StartsWithSegments("/api"),
+                    context => !context.Request.Path.StartsWithSegments("/api", StringComparison.OrdinalIgnoreCase),
                     a => a.UseExceptionHandler("/Home/Error")
                 );
                 app.UseHsts();
             }
 
             app.UseWhen(
-                context => !context.Request.Path.StartsWithSegments("/api"),
+                context => !context.Request.Path.StartsWithSegments("/api", StringComparison.OrdinalIgnoreCase),
                 a => a.UseStatusCodePagesWithReExecute("/Home/ErrorWithCode/{0}")
             );
 

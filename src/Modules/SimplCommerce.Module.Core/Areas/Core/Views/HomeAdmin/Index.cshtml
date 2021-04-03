@@ -15,7 +15,7 @@
     Layout = null;
 
     var assetBundling = Config.GetValue<bool>("Global.AssetBundling");
-    var defaultCulture = Config.GetValue<string>("Global.DefaultCultureUI");
+    var defaultCulture = Config.GetValue<string>("Global.DefaultCultureAdminUI") ?? Config.GetValue<string>("Global.DefaultCultureUI");
     var cultures = CultureRepository.Query().Where(x => x.Id != defaultCulture).Select(x => $"\"{x.Id}\"").ToArray();
 }
 
@@ -64,6 +64,7 @@
     <script simpl-append-version="true" src="~/lib/i18n/angular-locale_@(CultureInfo.CurrentCulture.Name.ToLower()).js"></script>
 
     <script simpl-append-version="true" src="~/_content/SimplCommerce.Module.Core/admin/common/slugify.js"></script>
+    <script simpl-append-version="true" src="~/_content/SimplCommerce.Module.Core/admin/common/simplUtil.js"></script>
     <script>
         angular.module('simplAdmin', [
             'ui.router',
@@ -98,7 +99,7 @@
     {
 
         var resourceStream = module.Assembly.GetManifestResourceStream($"{module.Id}.bundleconfig.json");
-        if(resourceStream == null)
+        if (resourceStream == null)
         {
             continue;
         }

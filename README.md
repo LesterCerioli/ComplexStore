@@ -59,21 +59,7 @@ For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 - Angular 1.6.3
 - MediatR 7.0.0 for domain event
 
-## How to contribute
 
-- Star this project on GitHub.
-- Report bugs or suggest features by create new issues or add comments to issues
-- Submit pull requests
-- Spread the word by blogging about SimplCommerce or sharing it on social networks
-- Donate us
-
-
-
-<a href="https://opencollective.com/simplcommerce/sponsor/0/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/1/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/2/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/3/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/4/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/4/avatar.svg"></a>
 
 ## License
 

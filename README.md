@@ -12,13 +12,12 @@
 
 ## Online demo (Azure Website)
 - Store front: https://expressstore.azurewebsites.net/
-- Administration: https://expressstore.azurewebsites.net//admin Email: admin@simplcommerce.com Password: 1qazZAQ!
+- Administration: https://expressstore.azurewebsites.net/admin Email: admin@simplcommerce.com Password: 1qazZAQ!
 
 ## Docker
 
 For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 
-Continuous deployment: https://ci.simplcommerce.com
 
 ## Visual Studio 2019 and SQL Server
 

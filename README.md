@@ -4,6 +4,8 @@
 
 ![SimpleCommerce - Modular architecture](https://raw.githubusercontent.com/simplcommerce/SimplCommerce/master/modular-architecture.png)
 
+
+
 ## Build Status
 | Build server    | Platform       | Status      |
 |-----------------|----------------|-------------|
@@ -11,14 +13,13 @@
 |Travis           | Linux / MacOS  |[![Build Status](https://travis-ci.org/simplcommerce/SimplCommerce.svg?branch=master)](https://travis-ci.org/simplcommerce/SimplCommerce) |
 
 ## Online demo (Azure Website)
-- Store front: http://demo.simplcommerce.com
-- Administration: http://demo.simplcommerce.com/admin Email: admin@simplcommerce.com Password: 1qazZAQ!
+- Store front: https://expressstore.azurewebsites.net/
+- Administration: https://expressstore.azurewebsites.net/admin Email: admin@simplcommerce.com Password: 1qazZAQ!
 
 ## Docker
 
 For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 
-Continuous deployment: https://ci.simplcommerce.com
 
 ## Visual Studio 2019 and SQL Server
 
@@ -58,43 +59,7 @@ Continuous deployment: https://ci.simplcommerce.com
 - Angular 1.6.3
 - MediatR 7.0.0 for domain event
 
-## Docs
 
-https://docs.simplcommerce.com/
-
-## Roadmap
-
-https://github.com/simplcommerce/SimplCommerce/wiki/Roadmap
-
-## How to contribute
-
-- Star this project on GitHub.
-- Report bugs or suggest features by create new issues or add comments to issues
-- Submit pull requests
-- Spread the word by blogging about SimplCommerce or sharing it on social networks
-- Donate us
-
-## Contributors
-
-This project exists thanks to all the people who contribute.
-
-<a href="https://github.com/simplcommerce/SimplCommerce/graphs/contributors"><img src="https://opencollective.com/simplcommerce/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
-
-## Backers
-
-Love our work and help us continue our activities? [[Become a backer](https://opencollective.com/simplcommerce#backer)]
-
-<a href="https://opencollective.com/simplcommerce#backers" target="_blank"><img src="https://opencollective.com/simplcommerce/backers.svg?width=890"></a>
-
-## Sponsors
-
-Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/simplcommerce#sponsor)]
-
-<a href="https://opencollective.com/simplcommerce/sponsor/0/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/1/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/2/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/3/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/4/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/4/avatar.svg"></a>
 
 ## License
 
